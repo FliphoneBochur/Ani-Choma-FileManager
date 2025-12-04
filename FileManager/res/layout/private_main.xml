@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:id="@id/content_frame" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ImageView android:id="@id/shadow" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/fm_bar_shadow" style="?android:actionButtonStyle" />
+        <TextView android:textSize="16.0sp" android:layout_gravity="center|left" android:id="@id/private_count_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/shadow" android:fontFamily="sans-serif-condensed" android:layout_marginStart="@dimen/main_snacktext_margin_left" />
+        <FrameLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/private_count_text" />
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/floating_action_button" />
+    <LinearLayout android:id="@id/snackbarlayout" android:background="@color/snackbar_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/main_snackbar_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/main_snackbar_textsize" android:textColor="@color/search_view_color" android:layout_gravity="center" android:id="@id/snackbarlayout_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/main_snacktext_margin_left" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

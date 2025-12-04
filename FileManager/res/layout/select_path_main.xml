@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/whole_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/path_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <LinearLayout android:orientation="vertical" android:id="@id/select_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="10.0dip" style="?android:buttonBarStyle">
+            <Button android:textSize="@dimen/home_text_size" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/btn_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+            <Button android:textSize="@dimen/home_text_size" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/btn_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignTop="@id/select_btn" />
+    <ListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/list_view_divider" android:layout_above="@id/select_btn" android:layout_below="@id/path_toolbar" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/translucent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/create_title_text" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_message_title" android:background="@drawable/shape_create_folder_title" android:layout_width="fill_parent" android:layout_height="@dimen/create_title" android:text="@string/create_new_folder" />
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/create_bg_size">
+        <EditText android:textSize="@dimen/create_et_text" android:layout_gravity="center" android:id="@id/et_create_folder_name" android:background="@drawable/shape_create_folder" android:paddingLeft="@dimen/create_et_padding" android:paddingRight="@dimen/create_et_padding" android:layout_width="fill_parent" android:layout_height="@dimen/create_et_size" android:layout_marginLeft="@dimen/create_et_margin" android:layout_marginRight="@dimen/create_et_margin" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

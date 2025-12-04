@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/normal_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/elder_title_size" android:textColor="@color/white" android:gravity="center" android:background="@color/actionbar_bg_color" android:paddingTop="4.0px" android:paddingBottom="6.0px" android:layout_width="fill_parent" android:layout_height="38.0px" android:text="@string/detail" android:fontFamily="sans-serif" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="38.0px">
+        <ListView android:scrollbarThumbVertical="@drawable/listview_scrollbar_img" android:scrollbarTrackVertical="@drawable/elder_listview_track_img" android:scrollbarStyle="outsideOverlay" android:id="@id/listview_detail_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/normal_black" android:divider="@null" android:scrollbarFadeDuration="0" android:fadeScrollbars="false" />
+    </LinearLayout>
+    <View android:background="@drawable/actionbar_bg" android:layout_width="fill_parent" android:layout_height="4.0px" android:layout_marginTop="38.0px" android:layout_alignParentBottom="true" />
+</FrameLayout>

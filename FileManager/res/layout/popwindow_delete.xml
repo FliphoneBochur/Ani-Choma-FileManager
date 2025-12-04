@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/translucent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@drawable/shape_pop_text_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="240.0px" android:minHeight="70.0px">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/delete_text" android:textColor="@color/black" android:gravity="left" android:id="@id/delete_message" android:paddingLeft="10.0px" android:paddingTop="8.0px" android:paddingRight="10.0px" android:paddingBottom="8.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

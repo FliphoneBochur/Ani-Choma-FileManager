@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/normal_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/default_title_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/name_item" android:background="@color/filemanager_theme_color_dark" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="@string/sort" android:singleLine="true" android:layout_centerVertical="true" android:fontFamily="sans-serif" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="38.0dip">
+        <ListView android:id="@id/sort_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/selected_background" android:divider="@null" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

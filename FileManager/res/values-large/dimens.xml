@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">55.000008%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="bar_small_text_size">14.0dip</dimen>
+    <dimen name="category_phone_storage_size_size">14.0sp</dimen>
+    <dimen name="category_phone_storage_text_size">16.0sp</dimen>
+    <dimen name="default_icon_size">32.0dip</dimen>
+    <dimen name="file_grid_item_more_maginend">5.0dip</dimen>
+    <dimen name="file_grid_item_name_height">56.0dip</dimen>
+    <dimen name="file_list_item_margin">25.0dip</dimen>
+    <dimen name="file_list_item_minheight">72.0dip</dimen>
+    <dimen name="file_list_item_more_margin">18.0dip</dimen>
+    <dimen name="list_time_text_size">15.0sp</dimen>
+    <dimen name="list_title_text_size">16.0sp</dimen>
+    <dimen name="main_item_icon_height">72.0dip</dimen>
+    <dimen name="main_item_text_name">16.0sp</dimen>
+    <dimen name="main_item_text_size">14.0sp</dimen>
+    <dimen name="storage_icon_size">32.0dip</dimen>
+</resources>

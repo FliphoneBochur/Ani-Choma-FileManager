@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/select_type_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_view_divider" />
+    <ScrollView android:id="@id/no_private_scroll" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/no_private_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="50.0dip" android:layout_marginEnd="50.0dip">
+            <ImageView android:id="@id/safe_no_folder_img" android:layout_width="132.0dip" android:layout_height="132.0dip" android:src="@drawable/ic_empty" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:id="@id/no_private_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/no_category" android:layout_below="@id/safe_no_folder_img" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" />
+            <Button android:textSize="16.0sp" android:id="@id/safe_add_file_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/add_files" android:layout_below="@id/no_private_content" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/main_item_bac" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/main_item_size" android:layout_height="@dimen/main_item_size" android:layout_margin="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center|top" android:background="@color/main_bac_color" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/category_img" android:layout_width="72.0dip" android:layout_height="55.0dip" android:scaleType="centerInside" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/main_item_mes_bac" android:layout_width="fill_parent" android:layout_height="17.0dip">
+            <TextView android:textSize="@dimen/main_item_text_name" android:textColor="@color/filermanager_accent_color_bb" android:ellipsize="marquee" android:id="@id/category_name" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/main_item_text_size" android:textColor="@color/filermanager_accent_color_bb" android:ellipsize="marquee" android:id="@id/category_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

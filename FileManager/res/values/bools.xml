@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="def_DRM_included">true</bool>
+    <bool name="def_OTG_paste_mediascanner">false</bool>
+    <bool name="def_Sort_type_name">true</bool>
+    <bool name="def_openfile_default_uri_type">true</bool>
+    <bool name="def_privatemode_included">false</bool>
+    <bool name="def_sharefile_default_uri_type">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+</resources>

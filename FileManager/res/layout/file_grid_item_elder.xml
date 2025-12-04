@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="@dimen/elder_default_grid_size" android:layout_height="@dimen/elder_default_grid_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jrdcom.filemanager.view.ItemCardView android:id="@id/card_view" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/file_grid_item_bottom_view" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/file_grid_item_mes_layout" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/file_grid_item_mes_layou2t" android:background="@color/files_background" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/grid_image" android:layout_width="fill_parent" android:layout_height="@dimen/default_grid_img" android:layout_margin="0.0dip">
+                    <CheckBox android:layout_gravity="center|left|top" android:id="@id/ic_selected" android:visibility="gone" android:layout_width="@dimen/default_select_btn" android:layout_height="@dimen/default_select_btn" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/default_margin" android:button="@null" />
+                    <ImageView android:layout_gravity="center" android:id="@id/edit_adapter_img" android:layout_width="@dimen/elder_default_grid_img_size" android:layout_height="@dimen/elder_default_grid_img_size" android:layout_marginBottom="@dimen/elder_default_grid_img_bottom" android:scaleType="center" />
+                    <ImageView android:layout_gravity="center" android:id="@id/edit_show_img" android:visibility="gone" android:layout_width="@dimen/nail_size" android:layout_height="@dimen/nail_size" />
+                    <ImageView android:layout_gravity="center|left|top" android:id="@id/edit_private_img" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_margin="3.0dip" android:src="@drawable/ic_private_locked" />
+                </FrameLayout>
+                <TextView android:id="@id/grid_item_line" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/file_grid_item_name_layout" android:layout_width="fill_parent" android:layout_height="@dimen/default_grid_name">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/file_grid_item_name_margin_left" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_list_right_margin" android:layout_marginEnd="@dimen/file_grid_item_name_margin_left">
+                        <TextView android:textSize="@dimen/elder_item_text_size" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/edit_adapter_name" android:layout_width="@dimen/elder_default_grid_size" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" android:paddingStart="@dimen/default_list_right_margin" android:paddingEnd="@dimen/default_list_right_margin" />
+                        <TextView android:textSize="@dimen/bar_small_text_size" android:textStyle="bold" android:textColor="@color/grid_time_text_color" android:id="@id/edit_adapter_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/bar_small_text_size" android:textStyle="bold" android:textColor="@color/grid_time_text_color" android:id="@id/edit_adapter_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/edit_moreMenu" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="@dimen/file_grid_item_more_icon_size" android:layout_height="@dimen/file_grid_item_more_icon_size" android:src="@drawable/ic_file_overflow" android:layout_marginEnd="@dimen/file_grid_item_more_maginend" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.jrdcom.filemanager.view.ItemCardView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackgroundBorderless" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/horizontallist_item_icon" android:focusable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_arrow_white" android:alpha="0.5" />
+    <TextView android:textSize="@dimen/main_filepathbrower_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/horizontallist_item_path" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/main_filepathbrower_height" android:maxWidth="@dimen/main_filepathbrower_navigation_max_width" android:singleLine="true" />
+</LinearLayout>

@@ -389,7 +389,7 @@
 .end method
 
 .method public addAllItem(Ljava/util/List;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -400,11 +400,31 @@
     .end annotation
 
     .line 158
-    iget-object v0, p0, Lcom/jrdcom/filemanager/manager/FileInfoManager;->mAddFilesInfoList:Ljava/util/List;
+    if-eqz p1, :cond_0
 
-    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/jrdcom/filemanager/utils/FileInfo;
+
+    invoke-virtual {p0, v1}, Lcom/jrdcom/filemanager/manager/FileInfoManager;->addItem(Lcom/jrdcom/filemanager/utils/FileInfo;)V
+
+    goto :goto_0
 
     .line 159
+    :cond_0
     return-void
 .end method
 
@@ -421,7 +441,7 @@
 .end method
 
 .method public addItem(Lcom/jrdcom/filemanager/utils/FileInfo;)V
-    .locals 2
+    .locals 3
 
     .line 145
     if-eqz p1, :cond_0
@@ -429,6 +449,18 @@
     invoke-virtual {p1}, Lcom/jrdcom/filemanager/utils/FileInfo;->getFileAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v1, ".vcf"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     const-string v1, "/storage/emulated/0/Locker"
 
@@ -449,9 +481,27 @@
 .end method
 
 .method public addItem(Lcom/jrdcom/filemanager/utils/FileInfo;Z)V
-    .locals 0
+    .locals 3
 
     .line 163
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Lcom/jrdcom/filemanager/utils/FileInfo;->getFileAbsolutePath()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, ".vcf"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
     if-eqz p2, :cond_0
 
     iget-object p2, p0, Lcom/jrdcom/filemanager/manager/FileInfoManager;->mAddFilesInfoList:Ljava/util/List;
@@ -483,10 +533,13 @@
     .line 169
     :goto_0
     return-void
+
+    :cond_1
+    return-void
 .end method
 
 .method public addItemList(Ljava/util/List;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -502,11 +555,31 @@
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 371
-    iget-object v0, p0, Lcom/jrdcom/filemanager/manager/FileInfoManager;->mAddFilesInfoList:Ljava/util/List;
+    if-eqz p1, :cond_0
 
-    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/jrdcom/filemanager/utils/FileInfo;
+
+    invoke-virtual {p0, v1}, Lcom/jrdcom/filemanager/manager/FileInfoManager;->addItem(Lcom/jrdcom/filemanager/utils/FileInfo;)V
+
+    goto :goto_0
 
     .line 372
+    :cond_0
     return-void
 .end method
 
